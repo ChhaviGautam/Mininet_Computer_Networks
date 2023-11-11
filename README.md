@@ -46,7 +46,7 @@ You should see information about the OpenVSwitch bridges.
 
 **Running the Scripts**
 Now that Mininet and OpenVSwitch are set up, you can proceed to run the provided scripts:
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+_____________________________________________________________________________________________________________________________________________________________________________
 **Part 1: Custom Topology with Mininet
 Implementation**
 Code: The Mininet topology is defined in the Python script Pythonscript_a.py & Pythonscript_c.py.
@@ -58,7 +58,7 @@ Execute the following script:
 3. sudo ./pythonfilename.py
 </code></pre>
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+_____________________________________________________________________________________________________________________________________________________________________________
 **Part 2: TCP Client-Server Program and Throughput Analysis
 Implementation**
 Code: The Mininet topology and TCP client-server program are implemented in the Pythonscript Pythonscript_2.py.
