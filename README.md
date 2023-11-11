@@ -76,3 +76,39 @@ git clone https://github.com/ChhaviGautam/Mininet_computer_networks.git
 <pre><code>
 cd Mininet_computer_networks
 </code></pre>
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________
+**Throughput Analysis**
+Throughput, measured in bits per second (bps), represents the amount of data transferable over a network within a specified time frame. Various tools, such as Wireshark and iPerf, can be employed to measure throughput.
+
+**Observations**
+Several key observations can be drawn from the experiments:
+
+1. Congestion Control Scheme Impact:
+BBR outperforms the other congestion control schemes, consistently delivering higher throughput. Reno exhibits the lowest throughput.
+
+2. Link Loss Influence:
+Introducing link loss notably reduces throughput, with the impact more pronounced at higher link loss rates.
+
+3. Multiple Client Effects:
+With multiple clients, throughput diminishes compared to a single-client scenario. This is attributed to increased network congestion.
+
+**Conclusion**
+The congestion control scheme and the presence of link loss significantly influence network throughput. BBR emerges as the most efficient congestion control scheme, while Reno demonstrates the lowest throughput. Link loss, even at low rates, can substantially degrade network performance.
+
+**Enhancements
+Potential enhancements include:**
+
+1. Evaluation of Additional Congestion Control Schemes:
+Investigating the performance of other congestion control schemes could provide further insights into their effectiveness.
+
+2. Analysis of Different Network Topologies:
+Exploring the impact of congestion control schemes and link loss on various network topologies would broaden the scope of understanding.
+
+3. Implementation of Traffic Shaping:
+Incorporating traffic shaping techniques could further optimize network performance and resource utilization.
+
+References
+[Mininet GitHub Repository](https://github.com/mininet/mininet)
+[Iperf - The TCP, UDP, and SCTP Network Bandwidth Measurement Tool](https://iperf.fr/)
+Feel free to explore the code and results in the provided GitHub repository for detailed insights into the implementation and experimental outcomes.
