@@ -1,43 +1,41 @@
-# Mininet_Computer_Networks
-  In the assignment we have 2 parts the description is as following:-
-**Part 1: Routing in Mininet**
+Mininet Network Emulation and TCP Congestion Control Evaluation
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Authors:
+Sahil Nayak - 20110119
+Chhavi Gautam - 20110046
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Overview
+This project demonstrates the implementation of custom network topologies using Mininet and evaluates TCP congestion control schemes' performance under various conditions. The experiments involve modifying network routes, capturing and analyzing packets with Wireshark, and running TCP client-server programs to measure throughput. The results provide insights into the impact of congestion control schemes on network performance.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Part 1: Custom Topology with Mininet
+Implementation
+Code: The Mininet topology is defined in the Python script pythonfilename.py.
+Usage: Execute the script using sudo ./pythonfilename.py after making it executable with chmod +x pythonfilename.py.
+Results: Screenshots of successful communication between hosts are available in the Result-Q1-a folder.
+Observations
+Wireshark: Screenshots and observations of packet capture on router r1 are available in the Result-Q1-b folder.
 
-First we need to install mininet
+Latency Difference: Screenshots and latency measurements after varying default routing are available in the Result-Q1-c folder.
 
-To install Mininet, you can use the following command:
+Routing Tables
+Routing tables for routers r1, r2, and r3 for questions a and c are available in the Routing-Tables folder.
+Part 2: TCP Client-Server Program and Throughput Analysis
+Implementation
+Code: The Mininet topology and TCP client-server program are implemented in the Python script file_name.py.
+Usage: Run the script using sudo python file_name.py --config b --congestion cubic --loss 3.
+Results: Plots and tables for throughput analysis are available in the Throughput-Analysis folder.
+Observations
+Single Client-Server Setup: Screenshots and observations of throughput over time for each congestion control scheme are available in the Single-Client-Server folder.
 
-sudo pip3 install mininet
-This will install Mininet and its dependencies.
+Multiple Clients to One Server: Screenshots and observations of throughput over time for each host and congestion control scheme are available in the Multiple-Clients-to-One-Server folder.
 
-If you are using Ubuntu 16.04 or higher, you can also install Mininet using the following command:
+Link Loss Experiment: Screenshots and observations of throughput over time for each congestion control scheme with 1% and 3% link loss are available in the Link-Loss-Experiment folder.
 
-sudo apt-get install mininet
-
-To install Open vSwitch on Ubuntu, you can use the following command:
-
-sudo apt-get install openvswitch-switch
-
-
-This will install the Open vSwitch switch daemon and the necessary dependencies.
-
-## Documentation
-
-For more information on Open vSwitch, please see the following documentation:
-
-* [Open vSwitch website](https://openvswitch.org/)
-* [Open vSwitch documentation](https://openvswitch.org/documentation/)
-* [Open vSwitch FAQ](https://openvswitch.org/faq)
-
-Go to the directory where your Python file is saved.
-Make the file executable by running the following command:
-chmod +x pythonfilename.py
-Run the file with superuser privileges by running the following command:
-sudo ./pythonfilename.py
-This will open the Mininet CLI, where you can run your Python file.
-
-**Part 2: Evaluating Congestion Control Schemes**
-
-Write a custom TCP client-server program in Mininet.
-Use the program to evaluate different congestion control schemes, such as Vegas, Reno, Cubic, and BBR.
-Measure throughput under different conditions, such as varying loss parameters and multiple hosts.
-Analyze the results to determine the best congestion control scheme for each condition.
+How to Use
+Clone the repository: git clone https://github.com/ChhaviGautam/Mininet_computer_networks.git
+Navigate to the project directory: cd Mininet_computer_networks
+Follow the instructions in each script's comments for specific configurations and usage.
+References
+Mininet GitHub Repository
+Iperf - The TCP, UDP, and SCTP Network Bandwidth Measurement Tool
+Feel free to explore the code and results in the provided GitHub repository for detailed insights into the implementation and experimental outcomes.
