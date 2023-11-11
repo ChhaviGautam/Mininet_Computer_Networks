@@ -14,14 +14,15 @@ Before running the provided scripts, ensure that you have Mininet and OpenVSwitc
 Mininet Installation
 To install Mininet, follow these steps:
 
-Open a terminal.
+1. Open a terminal.
 
 Run the following commands:
 
+<pre><code>This is a code block.
 sudo apt-get update
 sudo apt-get install mininet
 This will install Mininet and its dependencies on your system.
-
+</code></pre>
 Verify the installation by running:
 
 sudo mn --version
